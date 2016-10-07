@@ -27,9 +27,9 @@
     "request-ip": "^1.2.2"
   },
   "devDependencies": {
-    "code": "2.x.x",
+    "code": "4.x.x",
     "hapi": ">=11",
-    "lab": "8.x.x"
+    "lab": "11.x.x"
   },
   "repository": {
     "type": "git",

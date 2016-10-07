@@ -56,12 +56,12 @@ it('adds rate-limiting headers on each request', (done) => {
         server.inject(request, (response) => {
 
             expect(response.statusCode).to.equal(200);
-            expect(response.result).to.deep.equal({ success: true });
-            expect(response.headers).to.include(
+            expect(response.result).to.equal({ success: true });
+            expect(response.headers).to.include([
                 'x-ratelimit-limit',
                 'x-ratelimit-remaining',
                 'x-ratelimit-reset'
-            );
+            ]);
 
             expect(response.headers['x-ratelimit-remaining']).to.equal(1);
             expect(response.headers['x-ratelimit-limit']).to.equal(2);
@@ -155,11 +155,11 @@ it('ignores unconfigured routes', (done) => {
         server.inject(request, (response) => {
 
             expect(response.statusCode).to.equal(200);
-            expect(response.headers).to.not.include(
+            expect(response.headers).to.not.include([
                 'x-ratelimit-remaining',
                 'x-ratelimit-limit',
                 'x-ratelimit-reset'
-            );
+            ]);
             done();
         });
     });
@@ -199,11 +199,11 @@ it('ignores error responses', (done) => {
         server.inject(request, (response) => {
 
             expect(response.statusCode).to.equal(501);
-            expect(response.headers).to.not.include(
+            expect(response.headers).to.not.include([
                 'x-ratelimit-remaining',
                 'x-ratelimit-limit',
                 'x-ratelimit-reset'
-            );
+            ]);
             done();
         });
     });
