@@ -23,7 +23,8 @@
     "hoek": "3.x.x",
     "ioredis": "1.x.x",
     "ms": "0.x.x",
-    "ratelimiter": "2.x.x"
+    "ratelimiter": "2.x.x",
+    "request-ip": "^1.2.2"
   },
   "devDependencies": {
     "code": "2.x.x",
