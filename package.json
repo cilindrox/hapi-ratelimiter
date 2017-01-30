@@ -19,9 +19,9 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "boom": "3.x.x",
-    "hoek": "3.x.x",
-    "ioredis": "1.x.x",
+    "boom": "5.x.x",
+    "hoek": "4.x.x",
+    "ioredis": "2.x.x",
     "ms": "0.x.x",
     "ratelimiter": "2.x.x",
     "request-ip": "^1.2.2"
@@ -29,7 +29,7 @@
   "devDependencies": {
     "code": "4.x.x",
     "hapi": ">=11",
-    "lab": "11.x.x"
+    "lab": "12.x.x"
   },
   "repository": {
     "type": "git",
