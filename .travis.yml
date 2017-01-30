@@ -1,9 +1,13 @@
 language: node_js
+
 env:
   - CXX="g++-4.8"
+
 node_js:
   - "4"
   - "6"
+  - "7"
+
 addons:
   apt:
     sources:
@@ -11,6 +15,8 @@ addons:
     packages:
     - g++-4.8
     - gcc-4.8
+
 services:
   - redis-server
+
 sudo: false

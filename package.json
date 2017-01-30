@@ -19,7 +19,7 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "boom": "5.x.x",
+    "boom": "4.x.x",
     "hoek": "4.x.x",
     "ioredis": "2.x.x",
     "ms": "0.x.x",
