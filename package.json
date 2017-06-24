@@ -22,6 +22,7 @@
     "boom": "4.x.x",
     "hoek": "4.x.x",
     "ioredis": "2.x.x",
+    "ip-range-check": "0.0.2",
     "ms": "0.x.x",
     "ratelimiter": "2.x.x",
     "request-ip": "^1.2.2"
